@@ -50,8 +50,9 @@ a {
 
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
-  color: #222222;
-  font-size: 1.125em; }
+  color: #fff;
+  font-size: 1.125em;
+  background-color: #22222a; }
   @media only screen and (max-width: 960px) {
     body {
       font-size: 125%; } }
@@ -67,9 +68,9 @@ p {
   font-family: "Alegreya Sans", Arial, sans-serif; }
 
 a {
-  color: #f27731; }
+  color: #c24721; }
   a:hover {
-    color: #ca510d; }
+    color: #812f16; }
 
 .sub-title {
   font-size: italic; }
@@ -90,11 +91,11 @@ a {
 #header {
   border-radius: 8px;
   border: 1px solid #999;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background-color: #170a48; }
+  background-color: #42424a; }
   #header #main-menu {
     width: 960px; }
     #header #main-menu li {
@@ -132,6 +133,6 @@ a {
 #footer {
   clear: both;
   height: 90px;
-  background-color: #ccf962; }
+  background-color: #698932; }
 
 /*# sourceMappingURL=main.css.map */
