@@ -23,6 +23,57 @@ Together, these cover the different kinds of text that appear in CSS.
 
   .super-cta-button {
     font-size: 1.25em; } }
+.col-1 {
+  width: 2em; }
+
+.col-2 {
+  width: 4em; }
+
+.col-3 {
+  width: 6em; }
+
+.col-4 {
+  width: 8em; }
+
+.col-5 {
+  width: 10em; }
+
+.col-6 {
+  width: 12em; }
+
+.bob-banker-profile {
+  background-image: url("/img/bob-banker.png"); }
+
+.patty-plume-profile {
+  background-image: url("/img/patty-plume.png"); }
+
+.sandra-smith-profile {
+  background-image: url("/img/sandra-smith.png"); }
+
+.tiny {
+  font-size: 8px; }
+
+.small {
+  font-size: 11px; }
+
+.medium {
+  font-size: 13px; }
+
+.large {
+  font-size: 18px; }
+
+.picture-j {
+  width: 20%; }
+
+.picture-j {
+  width: 40%; }
+
+.picture-j {
+  width: 60%; }
+
+.picture-j {
+  width: 80%; }
+
 /*
 @import url(); 
 @import "http://...";

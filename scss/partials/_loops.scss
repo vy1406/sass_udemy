@@ -1,0 +1,35 @@
+
+// through -> will generate [.col-1, ..., .col-6] ( inclusive )
+//    to   -> will generate [.col-1, ..., .col-5] ( exclusive )
+@for $i from 1 through 6 { 
+	.col-#{$i} {
+		width: $i * 2em;
+	}
+}
+
+
+// iterating through custom list.
+$speakers: bob-banker, patty-plume, sandra-smith;
+@each $speaker in $speakers {
+	.#{$speaker}-profile {
+		background-image: url('/img/#{$speaker}.png')
+	}
+}
+
+
+
+// iterating through custom list key-values.
+$font-sizes: (tiny: 8px, small:11px, medium: 13px, large: 18px);
+@each $name, $size in $font-sizes {
+	.#{$name} {
+		font-size: $size;
+	}
+}
+
+$j: 2;
+@while $j <= 8 {
+	.picture-#{&j} {
+		width: $j * 10%;
+	}
+	$j: $j + 2;
+}
