@@ -1,6 +1,8 @@
 @import "partials/mixins";
 @import "partials/functions";
 @import "partials/variables";
+@import "partials/extends_rules";
+
 
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
@@ -16,9 +18,32 @@
 @import "style-screen" screen;
 
 */
- 
+
 
 @include fancy-links;
+
+.error {
+	color: red;
+}
+
+.critical-error {
+	@extend .error;
+	bottom: 1px solid red;
+	font-weight: bold;
+}
+
+.cta-button {
+	@extend .warning-button;
+	@extend .error;
+	@include rounded;
+	font-weight: bold;
+}
+
+// chained extensions:
+.super-cta-button {
+	@extend .cta-button;
+	font-size: em(20px);
+}
 
 body {
 	font-family: $text-font;
@@ -48,6 +73,20 @@ a {
 	&:hover {
 		color: darken($link-color, 15%);
 	};
+}
+ 
+// will not be generated in css file.
+// only used to extending it
+// cannot use this as class:
+// lecture 11: Inheritance, lesson 26
+%hightlight {
+	font-size: italic;
+}
+
+.sub-title {
+	@extend %hightlight;
+	@extend .foo !optional; // if from some reason .foo doesnt not exist, it wont let preprocessor fail.
+	font-size: em(20px)
 }
 
 .warning-button {

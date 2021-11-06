@@ -1,0 +1,28 @@
+
+// lecture 11: Inheritance, lesson 26
+// extends rules:
+
+// this will NOT compile
+/*
+
+@media screen {
+	.super-cta-button {
+		@extend .cta-button;
+		font-size: em(20px);
+	}
+}
+
+*/
+
+
+// this will compile
+@media screen {
+	.foo {
+		color: red;
+	}
+	.super-cta-button {
+		@extend .foo;
+		font-size: em(20px);
+	}
+}
+

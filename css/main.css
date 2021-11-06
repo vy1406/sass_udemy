@@ -5,8 +5,24 @@ but which are rendered differently: quoted strings, like "Helvetica Neue",
 and unquoted strings (also known as identifiers), like bold.
 Together, these cover the different kinds of text that appear in CSS.
 */
+/*
+
+@media screen {
+	.super-cta-button {
+		@extend .cta-button;
+		font-size: em(20px);
+	}
+}
+
+*/
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@media screen {
+  .foo, .super-cta-button, .sub-title {
+    color: red; }
+
+  .super-cta-button {
+    font-size: 1.25em; } }
 /*
 @import url(); 
 @import "http://...";
@@ -17,6 +33,20 @@ Together, these cover the different kinds of text that appear in CSS.
 a {
   font-style: italic;
   text-decoration: none; }
+
+.error, .critical-error, .cta-button, .super-cta-button {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
+.cta-button, .super-cta-button {
+  border-radius: 6px;
+  font-weight: bold; }
+
+.super-cta-button {
+  font-size: 1.25em; }
 
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
@@ -41,11 +71,17 @@ a {
   a:hover {
     color: #ca510d; }
 
-.warning-button {
+.sub-title {
+  font-size: italic; }
+
+.sub-title {
+  font-size: 1.25em; }
+
+.warning-button, .cta-button, .super-cta-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px; }
-  .warning-button:hover {
+  .warning-button:hover, .cta-button:hover, .super-cta-button:hover {
     background-color: #ffb733; }
 
 * html body {
