@@ -40,6 +40,10 @@ Together, these cover the different kinds of text that appear in CSS.
 @mixin warning {
 	background-color: orange;
 	color: #fff;
+
+	&:hover{ 
+			background-color: lighten(orange, 10%);
+	};
 }
 
 @mixin box-shadow($shadows...) {

@@ -37,11 +37,15 @@ p {
 
 a {
   color: #f27731; }
+  a:hover {
+    color: #ca510d; }
 
 .warning-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px; }
+  .warning-button:hover {
+    background-color: #ffb733; }
 
 * html body {
   font-size: 125%; }
