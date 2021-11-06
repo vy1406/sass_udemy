@@ -1,3 +1,5 @@
+// the underscore will make the comlier not to compile it to css
+
 // === COLORS ===
 $text-color: #222222;
 $theme-color: #170a48;
@@ -7,8 +9,8 @@ $link-color: $secondary-color;
 $menu-item-color: white;
 
 // === FONTS ===
-$text-font: Verdana, Arial, sans-serif;
-$headline-font: 'Palatino Linotype', Georgia, serif;
+$text-font: "Alegreya Sans", Arial, sans-serif;
+$headline-font: "Titillium Web", Georgia, serif;
 
 // === SIZES ===
 $content-width: 960px;

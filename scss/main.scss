@@ -1,7 +1,20 @@
-@import "variables";
-@import "mixins";
+@import "partials/variables";
+@import "partials/mixins";
 
-// NO "_"
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");
+
+// NO "_"!
+// the underscore will make the comlier not to compile the file to css
+
+//normal css import types
+/*
+@import url(); 
+@import "http://...";
+@import "filename.css";
+@import "style-screen" screen;
+
+*/
 
 
 @include fancy-links;

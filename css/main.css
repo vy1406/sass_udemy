@@ -1,20 +1,36 @@
+/*
+Strings are sequences of characters (specifically Unicode code points).
+Sass supports two kinds of strings whose internal structure is the same
+but which are rendered differently: quoted strings, like "Helvetica Neue",
+and unquoted strings (also known as identifiers), like bold.
+Together, these cover the different kinds of text that appear in CSS.
+*/
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+/*
+@import url(); 
+@import "http://...";
+@import "filename.css";
+@import "style-screen" screen;
+
+*/
 a {
   font-style: italic;
   text-decoration: none; }
 
 body {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: "Alegreya Sans", Arial, sans-serif;
   color: #222222; }
 
 h1, h2, h3, h4 {
-  font-family: "Palatino Linotype", Georgia, serif; }
+  font-family: "Titillium Web", Georgia, serif; }
 
 h2 {
   font-size: 22px;
   font-weight: bold; }
 
 p {
-  font-family: Verdana, Arial, sans-serif; }
+  font-family: "Alegreya Sans", Arial, sans-serif; }
 
 a {
   color: #f27731; }

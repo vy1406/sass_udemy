@@ -1,3 +1,16 @@
+@mixin google-font($font) {
+	$font: unquote($font);
+	@import url(https://fonts.googleapis.com/css?family=#{$font})
+}
+
+
+/*
+Strings are sequences of characters (specifically Unicode code points).
+Sass supports two kinds of strings whose internal structure is the same
+but which are rendered differently: quoted strings, like "Helvetica Neue",
+and unquoted strings (also known as identifiers), like bold.
+Together, these cover the different kinds of text that appear in CSS.
+*/
 
 @mixin warning {
 	background-color: orange;
